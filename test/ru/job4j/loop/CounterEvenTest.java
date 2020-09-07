@@ -13,4 +13,12 @@ public class CounterEvenTest {
         int expected = 30;
         assertThat(rsl, is(expected));
     }
+
+    @Test
+    public void checkout() {
+        int rsl = CounterEven.sumByEven(3, 8);
+        int expected = 18;
+        assertThat(rsl, is(expected));
+
+    }
 }
