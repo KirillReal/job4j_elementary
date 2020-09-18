@@ -20,7 +20,7 @@ public class SortSelectedTest {
         int[] expect = new int[] {5, 6, 7, 8, 9};
         assertThat(result, is(expect));
     }
-    @SuppressWarnings("checkstyle:EmptyLineSeparator")
+
     @Test
     public void whenSort3() {
         int[] input = new int[] {11, 12, 10};
