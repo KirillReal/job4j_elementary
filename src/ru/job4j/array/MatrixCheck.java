@@ -35,10 +35,10 @@ public class MatrixCheck {
         boolean result = false;
         for (int i = 0; i < 5; i++) {
             if (board[i][i] == 'X') {
-                result = monoHorizontal(board, i);
+                result = monoVertical(board, i);
             }
             if (!result) {
-                result = monoVertical(board, i);
+                result = monoHorizontal(board, i);
             }
         }
         return result;
