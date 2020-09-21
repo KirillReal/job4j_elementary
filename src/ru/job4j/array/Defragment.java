@@ -5,20 +5,19 @@ public class Defragment {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
                 int point = index;
-                System.out.print(array[index] + " ");
-            }
-            for (int j = 1; j < array.length; j++) {
-                if (array[j] != null) { 
-                    String temp = array[j];
-                    array[j] = array[index];
-                    array[index] = temp;
+                for (int j = index; (array[index] == null) && (j < array.length); j++) {
+                    if (array[j] != null) {
+                        String temp = array[j];
+                        array[j] = array[index];
+                        array[index] = temp;
+                    }
                 }
             }
         }
         return array;
     }
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
             String[] input = {"I", null, "wanna", null, "be", null, "compressed"};
             String[] compressed = compress(input);
             System.out.println();
