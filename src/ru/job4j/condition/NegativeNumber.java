@@ -5,7 +5,6 @@ public class NegativeNumber {
        negative(4);
        negative(-4);
     }
-
     public static void negative(int number) {
         if (number < 0) {
             System.out.println("This is negative numbers");

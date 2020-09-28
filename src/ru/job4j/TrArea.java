@@ -7,7 +7,6 @@ public class TrArea {
         double rsl = Math.sqrt(multiplication);
         return rsl;
     }
-
     public static void main(String[] args) {
         double rsl = TrArea.area(2, 2, 2);
         System.out.println("area (2, 2, 2) = " + rsl);

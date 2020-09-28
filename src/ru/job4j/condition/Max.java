@@ -6,7 +6,6 @@ public class Max {
         int result = yes ?  left : right;
         return result;
     }
-
     public static void main(String[] args) {
         int msg = Max.max(4, 5);
         System.out.println(msg);
